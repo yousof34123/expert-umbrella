@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 80%;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      background-color: #ff6699;
+      padding: 20px 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff5733;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="surprise1">
+    <header>
+      <h1>🎉 HAPPY BIRTHDAY ZUHAL GULE! 🎉</h1>
+    </header>
+    <main>
+      <p>You are the sun into my raining seasons!<br>
+         your existance beautifies the world you <br>
+         are the most beautiful girl ever; <br>
+        this is for you to make this birthday a memory for you; <br>
+        <strong>THANKS FOR BEING IN MY LIFE!</strong>
+      </p>
+      <audio autoplay>
+        <source src="birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <a href="#surprise2"><button>PLEASE CLICK </button></a>
+    </main>
+  </div>
+
+  <div class="container" id="surprise2" style="display: none;">
+    <header>
+      <h1>🎉 I think words are not enough! 🎉</h1>
+    </header>
+    <main>
+      <p> <br> خلایق در تو حیرانند و جای حیرتست الحق
+        <br> که مه را بر زمین بینند و مه بر آسمان باشد
+        <br> <br> 
+        ******
+        
+       <br> گفتی نظر خطاست تو دل می‌ بری رواست
+        <br>خود کرده جرم و خلق گنه کار می‌ کنی </p>
+
+      <audio autoplay>
+        <source src="birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <a href="#surprise3"><button>CLICK 😉</button></a>
+    </main>
+  </div>
+
+  <div class="container" id="surprise3" style="display: none;">
+    <header>
+      <h1>🎉 FOR one and ONly JIYA 😘 🎉</h1>
+    </header>
+    <main>
+      <p>YOu know I am not sure what to say; the only thing I know is <br> <strong>You are the MOON </strong></p>
+      <audio autoplay>
+        <source src="surprise3_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>here; it is just for you! <br> this is my own voice <strong>(ofcourse edited😜)</strong> </p>
+      <video width="320" height="320" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <video width="320" height="320" controls>
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <br>
+      <a href="#surprise4"><button>ONE MORE CLICK 😁</button></a>
+    </main>
+  </div>
+
+  <div class="container" id="surprise4" style="display: none;">
+    <header>
+      <h1>🎉 REMEBER  🎉</h1>
+    </header>
+    <main>
+      <p>💞  Count your life by smiles, not tears <br> <br> 
+        💞  Happy birthday! Your life is just about to <br> 
+             pick up speed and blast off into the stratosphere.<br> 
+             Wear a seat belt and be sure to enjoy the journey. </p> 
+             💞  Forget the past; look forward to the future,<br>
+              for the best things are yet to come<br> <br>
+      <audio autoplay>
+        <source src="surprise4_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+      <!-- Add your memories here -->
+      <a href="#surprise5"><button>ONE MORE 🤔</button></a>
+    </main>
+  </div>
+
+  <div class="container" id="surprise5" style="display: none;">
+    <header>
+      <h1>🎉 HAPPY BIRTHDAY, <strong>MAHMOODA</strong> 😍 🎉</h1>
+    </header>
+   
+    <main>
+      <p> 
+        I want all the best things be your you know why? <br>
+        😘😘 <br> cause you are the best of all that I met<br> 
+        😘😘😘 <br>  you are always here to listen and understand <br> 
+        😘😘😘 <br>   You never stop being kind <br> 
+        😘😘😘 <br>  You are the best of all the best freinds<br> 
+        😘😘😘 <br>    You never let me feel bad <br> 
+        😘😘😘 <br> I KNOW you deserve more <br> 
+        <strong> 🎉🎉🎂🎂HBD THE LOVELIEST PRINCESS 🎉🎉🎂🎂</strong> <br>
+      </p>
+
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            document.querySelectorAll('.container').forEach(container => {
+              container.style.display = 'none';
+            });
+            target.style.display = 'block';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
